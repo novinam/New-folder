@@ -62,6 +62,67 @@ if page == "Home":
     I am **Dr. Neda Najafi**, a dedicated medical doctor currently practicing in **Ahvaz**, 
     with a strong focus on preventive healthcare, patient education, and modern treatment methods.
     """)
+    st.header("🩺 Medical Services")
+
+    st.header("💬 Patient Testimonials")
+
+    st.header("🦷 Dental Services")
+
+    st.markdown("""
+    We provide comprehensive dental care with modern equipment and a gentle touch:
+
+    - **Cosmetic Dentistry** – Teeth whitening, veneers, and smile design  
+    - **Dental Implants** – Permanent replacement for missing teeth  
+    - **Orthodontics (Braces & Aligners)** – Perfect alignment for all ages  
+    - **Root Canal Therapy** – Pain-free endodontic treatments  
+    - **Pediatric Dentistry** – Gentle care for children  
+    - **Oral Surgery** – Wisdom tooth extraction and minor surgical care  
+    - **Preventive Dentistry** – Scaling, polishing, and regular checkups  
+    """)
+    st.header("💬 Patient Testimonials")
+
+    st.markdown("""
+    > *"Dr. Najafi transformed my smile completely — I finally feel confident!"*  
+    — **Elham R., Ahvaz**
+
+    > *"The clinic is spotless, and the equipment is very modern."*  
+    — **Morteza S., Khorramshahr**
+
+    > *"She explains everything clearly and is so gentle during treatment."*  
+    — **Sara T., Ahvaz**
+    """)
+    st.header("🏅 Certifications & Awards")
+
+    st.markdown("""
+    - 🥇 **Doctor of Dental Surgery (DDS)** – Russian Medical University  
+    - 🎓 **Certificate in Advanced Cosmetic Dentistry** – Moscow, 2020  
+    - 💎 **Member of Iranian Dental Association (IDA)**  
+    - 🌐 Fluent in Persian 🇮🇷 | English 🇬🇧 | Russian 🇷🇺  
+    """)
+
+    st.header("📸 Smile Gallery")
+    st.markdown("Before and after results from real patients (with consent):")
+    st.image([
+        "whitening.jpg",
+        "implant.jpeg",
+        "clinic.jpg"
+    ], width=300, caption=["Whitening", "Implants", "Clinic View"])
+
+    st.header("❓ FAQ")
+    with st.expander("How often should I visit the dentist?"):
+        st.write("Ideally, every 6 months for cleaning and checkup.")
+
+    with st.expander("Are whitening treatments safe?"):
+        st.write("Yes, all whitening procedures are performed under supervision with approved materials.")
+
+    with st.expander("Do you offer painless treatments?"):
+        st.write("Absolutely — we use local anesthesia and modern techniques for patient comfort.")
+
+
+
+
+
+
 
 elif page == "About":
     st.header("About Me")

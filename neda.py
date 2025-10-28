@@ -53,34 +53,56 @@ st.sidebar.markdown(
 # --- Main Content ---
 if page == "Home":
     st.title("Dr. Neda Najafi")
-    st.subheader("Medical Doctor | Honor Medalist | Graduate of Russia with Distinction")
+    st.subheader("Dentist | Cosmetic & Implant Specialist | Graduate of Russia with Distinction")
 
-    st.image("neda.jpg", width=220)
+    st.image("neda.jpg", width=260)
 
     st.write("""
-    Welcome to my professional portfolio.  
-    I am **Dr. Neda Najafi**, a dedicated medical doctor currently practicing in **Ahvaz**, 
-    with a strong focus on preventive healthcare, patient education, and modern treatment methods.
+    Welcome to the official website of **Dr. Neda Najafi**, a dedicated and experienced **dentist** 
+    providing modern dental care in **Ahvaz, Iran**.  
+    My mission is to bring confidence back to every smile — through advanced, gentle, and personalized treatments.
     """)
-    st.header("🩺 Medical Services")
 
-    st.header("💬 Patient Testimonials")
-
+    # --- Services Section ---
     st.header("🦷 Dental Services")
-
     st.markdown("""
-    We provide comprehensive dental care with modern equipment and a gentle touch:
+    We offer comprehensive dental services for all age groups:
 
     - **Cosmetic Dentistry** – Teeth whitening, veneers, and smile design  
-    - **Dental Implants** – Permanent replacement for missing teeth  
-    - **Orthodontics (Braces & Aligners)** – Perfect alignment for all ages  
-    - **Root Canal Therapy** – Pain-free endodontic treatments  
-    - **Pediatric Dentistry** – Gentle care for children  
-    - **Oral Surgery** – Wisdom tooth extraction and minor surgical care  
-    - **Preventive Dentistry** – Scaling, polishing, and regular checkups  
+    - **Dental Implants** – Long-lasting solutions for missing teeth  
+    - **Orthodontics (Braces & Aligners)** – Perfect alignment for children and adults  
+    - **Root Canal Therapy** – Painless endodontic treatments  
+    - **Pediatric Dentistry** – Gentle and fun dental care for kids  
+    - **Preventive Dentistry** – Regular checkups, scaling, and oral hygiene education  
     """)
-    st.header("💬 Patient Testimonials")
 
+    # --- Why Choose Us ---
+    st.header("💎 Why Choose Dr. Najafi?")
+    st.markdown("""
+    - 🩺 **Highly Skilled Dentist** trained in Russia with international standards  
+    - 💬 **Patient-Centered Care** — I explain every step before treatment  
+    - 🧠 **Modern Technology** — Digital X-ray, laser whitening, painless anesthesia  
+    - 🕒 **Flexible Appointments** — Easy scheduling and friendly support  
+    """)
+
+    # --- Clinic Highlights ---
+    st.header("🏥 Clinic Highlights")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.image("1.jpg", width=245)
+        st.caption("Modern Dental Equipment")
+
+    with col2:
+        st.image("2.jpg", use_container_width=True)
+        st.caption("Comfortable Waiting Area")
+
+    with col3:
+        st.image("3.jpg", use_container_width=True)
+        st.caption("Digital Imaging & X-Ray")
+
+    # --- Patient Testimonials ---
+    st.header("💬 Patient Testimonials")
     st.markdown("""
     > *"Dr. Najafi transformed my smile completely — I finally feel confident!"*  
     — **Elham R., Ahvaz**
@@ -91,36 +113,54 @@ if page == "Home":
     > *"She explains everything clearly and is so gentle during treatment."*  
     — **Sara T., Ahvaz**
     """)
-    st.header("🏅 Certifications & Awards")
 
-    st.markdown("""
-    - 🥇 **Doctor of Dental Surgery (DDS)** – Russian Medical University  
-    - 🎓 **Certificate in Advanced Cosmetic Dentistry** – Moscow, 2020  
-    - 💎 **Member of Iranian Dental Association (IDA)**  
-    - 🌐 Fluent in Persian 🇮🇷 | English 🇬🇧 | Russian 🇷🇺  
-    """)
-
+    # --- Gallery ---
     st.header("📸 Smile Gallery")
-    st.markdown("Before and after results from real patients (with consent):")
+    st.markdown("Before and after transformations from real patients (with consent):")
     st.image([
         "whitening.jpg",
         "implant.jpeg",
         "clinic.jpg"
     ], width=300, caption=["Whitening", "Implants", "Clinic View"])
 
+    # --- Certifications ---
+    st.header("🏅 Certifications & Awards")
+    st.markdown("""
+    - 🎓 **DDS (Doctor of Dental Surgery)** – Russian Medical University  
+    - 💎 **Advanced Cosmetic Dentistry** – Moscow, 2020  
+    - 🏆 **Honor Medalist** for academic excellence  
+    - 🌐 Fluent in Persian 🇮🇷 | English 🇬🇧 | Russian 🇷🇺  
+    """)
+
+    # --- FAQ Section ---
     st.header("❓ FAQ")
     with st.expander("How often should I visit the dentist?"):
-        st.write("Ideally, every 6 months for cleaning and checkup.")
+        st.write("Ideally, every 6 months for a cleaning and checkup.")
 
     with st.expander("Are whitening treatments safe?"):
-        st.write("Yes, all whitening procedures are performed under supervision with approved materials.")
+        st.write("Yes — all whitening materials are approved and used under professional supervision.")
 
     with st.expander("Do you offer painless treatments?"):
-        st.write("Absolutely — we use local anesthesia and modern techniques for patient comfort.")
+        st.write("Absolutely! We use advanced anesthesia and gentle techniques for full comfort.")
 
+    # --- Booking Section ---
+    st.header("📅 Book an Appointment")
+    st.markdown("""
+    Need a consultation or checkup?  
+    📞 **Phone:** 09160622688  
+    💬 **WhatsApp:** [Chat Now](https://wa.me/989160622688)  
+    📍 **Address:** Iran Negin Complex, Entrance 2, 2nd Floor, 6th West Street, Kianpars, Ahvaz
+    """)
 
-
-
+    # --- Footer ---
+    st.markdown("""
+    <hr style='border:1px solid #ccc; margin-top:40px;'>
+    <center>
+    <p style='color:gray; font-size:14px;'>
+    © 2025 Dr. Neda Najafi
+    </p>
+    </center>
+    """, unsafe_allow_html=True)
 
 
 
